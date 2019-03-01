@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+    <context id="context1">
+        <jdbcConnection connectionURL="jdbc:mysql://192.168.15.130:3306/fazhanceping?nullCatalogMeansCurrent=true"
+                        driverClass="com.mysql.cj.jdbc.Driver" userId="root"  password="root"/>
+        <javaModelGenerator targetPackage="com.txcjh.fazhanceping.model" targetProject="C:/Users/Junhui Chen/Desktop/fazhanceping_online/fazhanceping_server/src/main/java">
+         	<property name="constructorBased" value="true"/>
+         </javaModelGenerator>
+        <sqlMapGenerator targetPackage="com.txcjh.fazhanceping.mapper" targetProject="C:/Users/Junhui Chen/Desktop/fazhanceping_online/fazhanceping_server/src/main/java"  />
+        <javaClientGenerator targetPackage="com.txcjh.fazhanceping.mapper" targetProject="C:/Users/Junhui Chen/Desktop/fazhanceping_online/fazhanceping_server/src/main/java"
+                             type="XMLMAPPER"/>
+        <!--<table tableName="users"></table>-->
+        <!--<table tableName="user_info"></table>-->
+        <!--<table tableName="dafen"></table>-->
+        <table tableName="tuiyou"></table>
+    </context>
+</generatorConfiguration>
